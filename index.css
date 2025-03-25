@@ -89,3 +89,7 @@ p.weather-temp {
     font-size: 2px;
     padding-bottom: -10px;
 }
+
+#main {
+    padding: -10px;
+}
