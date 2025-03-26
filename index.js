@@ -1,7 +1,7 @@
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature&mode=dark")
     .then(res => res.json())
     .then(data => {
-        document.body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${data.urls.regular})`
+        document.body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${data.urls.regular})`
 		document.getElementById("author").textContent = `Art by: ${data.user.name}`
     })
     .catch(err => {
